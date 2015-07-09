@@ -1,0 +1,24 @@
+{
+  "name": "basic-hawaiian",
+  "version": "1.0.0",
+  "authors": [
+    "Justin Hedani <jkhedani@gmail.com>"
+  ],
+  "description": "A WordPress theme for Basic Hawaiian",
+  "main": "style.css",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "font-awesome": "~4.3.0"
+  }
+}

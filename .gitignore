@@ -1,0 +1,12 @@
+# WP Skeleton
+
+/shared
+/local-config.php
+/sql-dump-*.sql
+/db-sync
+/content/upgrade/
+.DS_Store
+
+# Custom Ignores
+/content/uploads/
+/wp
