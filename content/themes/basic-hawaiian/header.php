@@ -36,7 +36,7 @@
 			    </div>
 					<div class="collapse navbar-collapse">
 						<!-- Sign In & Up -->
-						<a type="button" id="sign-in" class="btn btn-primary navbar-btn" href="<?php echo get_home_url(); ?>/sign-up">Sign Up</a>
+						<!--<a type="button" id="sign-in" class="btn btn-primary navbar-btn" href="<?php echo get_home_url(); ?>/sign-up">Sign Up</a>-->
 						<!-- Button trigger modal -->
 						<button type="button" id="sign-up" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
 						<!-- Public Navigation -->
