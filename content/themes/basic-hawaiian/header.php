@@ -18,7 +18,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
+<div id="page" class="hfeed site container-fluid">
+	<div class="row">
 
 		<?php if ( ! is_user_logged_in() ) : ?>
 
@@ -36,7 +37,7 @@
 			    </div>
 					<div class="collapse navbar-collapse">
 						<!-- Sign In & Up -->
-						<!--<a type="button" id="sign-in" class="btn btn-primary navbar-btn" href="<?php echo get_home_url(); ?>/sign-up">Sign Up</a>-->
+						<a type="button" id="sign-in" class="btn btn-primary navbar-btn" href="<?php echo get_home_url(); ?>/sign-up">Sign Up</a>
 						<!-- Button trigger modal -->
 						<button type="button" id="sign-up" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
 						<!-- Public Navigation -->
@@ -53,7 +54,7 @@
 
 		<?php else : ?>
 
-			<nav id="site-navigation" class="site-header" role="banner">
+			<nav id="site-navigation" class="site-header col-sm-3" role="banner">
 
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-new.png'?>" alt="Basic Hawaiian Logo" /></a>
 				<a class="user-link" href="<?php echo get_admin_url('','profile.php'); ?>">
@@ -68,9 +69,10 @@
 					<ul class="drawer nav-sidebar">
 						<!--<li><a class="edit-profile" href="<?php echo get_edit_user_link(); ?>"><i class="fa fa-edit"></i>Edit your profile</a></li>-->
 						<?php if ( current_user_can('edit_posts') ) // Reset only for those who can edit the site ?>
-						<li><a href="mailto:info@basichawaiian.com" class="get-support">Get Support<i class="fa fa-question-circle"></i></a></li>
-						<li><a href="#" class="reset-scores">Reset Score<i class="fa fa-times-circle-o"></i></a></li>
-						<li><a href="<?php echo wp_logout_url( home_url() ); ?>" title="Logout">Logout<i class="fa fa-sign-out"></i></a></li>
+						<li><a href="<?php echo esc_url( home_url( '/scoresheet' ) ); ?>" class="view-scoresheet">View Scoresheet <i class="fa fa-tasks"></i></a></li>
+						<li><a href="mailto:info@basichawaiian.com" class="get-support">Get Support <i class="fa fa-question-circle"></i></a></li>
+						<li><a href="#" class="reset-scores">Reset Score <i class="fa fa-times-circle-o"></i></a></li>
+						<li><a href="<?php echo wp_logout_url( home_url() ); ?>" title="Logout">Logout <i class="fa fa-sign-out"></i></a></li>
 					</ul>
 			</nav><!-- #masthead -->
 

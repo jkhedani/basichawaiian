@@ -39,7 +39,7 @@ function basic_hawaiian_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	//add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
@@ -293,6 +293,18 @@ function basic_hawaiian_scripts() {
 
 	wp_enqueue_script( 'bootstrap-js', get_stylesheet_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', array('jquery'), '20120206', true );
 
+	// Stripe
+	if ( get_field('stripe_is_live','option') === false ) {
+		$publishable = get_field('stripe_test_publishable','option');
+	} elseif ( get_field('stripe_is_live','option') === true ) {
+		$publishable = get_field('stripe_live_publishable','option');
+	}
+	wp_enqueue_script( 'stripe-js', 'https://js.stripe.com/v2/', array('jquery'), '20150713', true );
+	wp_enqueue_script( 'stripe-processing', get_template_directory_uri() . '/js/stripe-processing.js', array('jquery'), '20150713', true );
+	wp_localize_script('stripe-processing', 'stripe_vars', array(
+		'publishable_key' => $publishable,
+	));
+
 	wp_enqueue_script( 'basic-hawaiian-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'basic-hawaiian-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
@@ -301,7 +313,7 @@ function basic_hawaiian_scripts() {
 	wp_enqueue_script('ajax_scripts', get_stylesheet_directory_uri() . "/inc/user-interactions/assessment/ajax-game-scripts.js", array('jquery','json2','bootstrap-js'), true);
 	wp_localize_script('ajax_scripts', 'ajax_scripts', array(
 		'ajaxurl' => admin_url('admin-ajax.php',$protocol),
-		'nonce' => wp_create_nonce('ajax_scripts_nonce')
+		'nonce' => wp_create_nonce('ajax_scripts_nonce'),
 	));
 
 	// Scene Generation Scripts
@@ -839,7 +851,7 @@ function myplugin_registration_errors( $errors, $sanitized_user_login, $user_ema
  */
 
 function my_custom_menu_page(){
-	echo "Admin Page Test";
+	require get_template_directory() . '/inc/scoresheet/scoresheet.php';
 }
 
 add_action( 'admin_menu', 'register_scoresheet' );

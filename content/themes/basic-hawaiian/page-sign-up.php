@@ -5,7 +5,15 @@
  *
  */
 
-get_header(); ?>
+get_header();
+
+if ( get_field('stripe_is_live','option') === false ) {
+	$publishable = get_field('stripe_test_publishable','option');
+} elseif ( get_field('stripe_is_live','option') === true ) {
+	$publishable = get_field('stripe_live_publishable','option');
+}
+
+?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -29,26 +37,29 @@ get_header(); ?>
 
 				<div class="container">
 				<div class="row">
-					<div class="col-sm-4">
-						<?php $cost_free = get_field('basic_membership_cost_1','option'); ?>
+					<div class="col-sm-6">
+						<?php $cost_one_unit = get_field('one_unit_cost','option'); ?>
 						<h2>Free</h2>
-						<h3><?php echo cents_to_dollars($cost_free); ?></h3>
+						<h3><?php echo cents_to_dollars($cost_one_unit); ?></h3>
 						<!-- Stripe: Shopping Cart -->
 						<form action="" method="POST">
 						  <script
 						    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-						    data-key="pk_test_9A16AVNKaUWhk8gFTfPv6RfE"
+						    data-key="<?php $publishable; ?>"
 						    data-amount="<?php echo $cost_free; ?>"
 						    data-name="Basic Hawaiian"
 						    data-description="Membership"
 						    data-image="<?php echo get_template_directory_uri(); ?>/images/stripe-avatar.jpg">
 						  </script>
 						</form>
+						<ul>
+							<li>1 Unit</li>
+						</ul>
 					</div>
-					<div class="col-sm-4">
-						<?php $cost_basic = get_field('basic_membership_cost_2','option'); ?>
+					<div class="col-sm-6">
+						<?php $cost_four_unit = get_field('four_unit_cost','option'); ?>
 						<h2>Basic</h2>
-						<h3><?php echo cents_to_dollars($cost_basic); ?></h3>
+						<h3><?php echo cents_to_dollars($cost_four_unit); ?></h3>
 						<!-- Stripe: Shopping Cart -->
 						<form action="" method="POST">
 						  <script
@@ -61,28 +72,7 @@ get_header(); ?>
 						  </script>
 						</form>
 						<ul>
-							<li>2 Modules over 1 Month</li>
-						</ul>
-					</div>
-					<div class="col-sm-4">
-						<?php $cost_premium = get_field('premium_membership_cost_1','option'); ?>
-						<h2>Premium</h2>
-						<h3><?php echo cents_to_dollars($cost_premium); ?></h3>
-						<!-- Stripe: Shopping Cart -->
-						<form action="" method="POST">
-						  <script
-						    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-						    data-key="pk_test_9A16AVNKaUWhk8gFTfPv6RfE"
-						    data-amount="<?php echo $cost_premium; ?>"
-						    data-name="Basic Hawaiian"
-						    data-description="Membership"
-						    data-image="<?php echo get_template_directory_uri(); ?>/images/stripe-avatar.jpg">
-						  </script>
-						</form>
-						<ul>
-							<li>1 Professional Assessment – Hawaiian Language Proficiency</li>
-							<li>4 hrs of 1-on-1 Instruction – answering questions re: Hawaiian language and culture</li>
-							<li>4 1 hr One-Stop Language Check</li>
+							<li>4 Units over 2 Years</li>
 						</ul>
 					</div>
 				</div><!-- .row -->

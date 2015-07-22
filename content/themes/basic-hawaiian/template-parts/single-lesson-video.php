@@ -5,23 +5,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
 
-		<?php // TODO: Jump back to the right unit & module ?>
-		<a id="back-to-unit" href="<?php echo home_url() . '/unit/aunty-aloha/'; ?>">Quit</a>
-
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-		<h2>
-			<?php
-				if ( get_field( 'optional_instructions' ) ) :
-					// Display optional instructions if they exist.
-					echo get_field( 'optional_instructions' );
-				else :
-					echo 'Watch and learn from the video below.';
-				endif;
-			?>
-		</h2>
-	</header><!-- .entry-header -->
+	<?php get_template_part('template-parts/single','lesson-header'); ?>
 
 	<div class="entry-content">
 		<!-- Video Player -->

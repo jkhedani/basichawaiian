@@ -144,14 +144,16 @@ get_header(); ?>
 
 	<?php else : ?>
 
-		<div id="primary" class="content-area">
+		<div id="primary" class="content-area col-sm-9">
 			<div id="content" class="site-content" role="main">
 
 				<!-- User Metadata -->
 				<header id="primary-alert" class="message">
-					<a data-toggle="close-alert" href="#primary-alert"><i class="fa fa-times"></i></a>
-					<div class="alert-avatar aunty-aloha"></div>
-					<div class="alert-content">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					  <span aria-hidden="true"><i class="fa fa-times"></i></span>
+					</button>
+					<img class="message-image" src="<?php echo get_stylesheet_directory_uri(); ?>/images/alert-aunty-aloha.png" />
+					<div class="message-content">
 						<span class="alert-content-title"><?php _e('E kipa mai i&#257; <span class="inline-kukui aunty-aloha">&#8216;Anak&#275; Aloha</span> ma ka m&#257;la.','hwn'); ?></span>
 						<span class="alert-content-subtitle">Completing the first Kukui will unlock the rest!</span>
 					</div>
@@ -223,6 +225,23 @@ get_header(); ?>
 					?>
 					<div class="user-avatar <?php echo $gender; ?> default"></div>
 				</div><!-- .coverflow -->
+
+				<!-- Welcome Modal -->
+				<button type="button" id="welcome-modal-trigger" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#welcome-modal">View Modal</button>
+
+				<div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog" aria-labelledby="welcome-modal" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Welcome Modal</h4>
+							</div>
+							<div class="modal-body">
+								<p>Welcome Modal</p>
+							</div>
+						</div>
+					</div>
+				</div><!-- .modal -->
 
 	<?php endif; ?>
 

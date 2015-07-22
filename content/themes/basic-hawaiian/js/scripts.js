@@ -78,7 +78,13 @@ jQuery(document).ready(function($){
 			event.preventDefault();
 		});
 	}
+
+	// Add coverflow to logged-in home
 	if ( $('body').hasClass('home') && $('body').hasClass('logged-in') ) {
+		$('.coverflow').coverflow();
+	}
+	// Add coverflow to logged-in units
+	if ( $('body').hasClass('single-units') && $('body').hasClass('logged-in') ) {
 		$('.coverflow').coverflow();
 	}
 
