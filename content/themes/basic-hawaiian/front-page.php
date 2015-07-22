@@ -196,6 +196,7 @@ get_header(); ?>
 							<?php endif; ?>
 							<a class="unit-info" href="#<?php echo $post->post_name; ?>">?</a>
 							<a class="view-unit btn btn-cta blue" href="<?php echo get_permalink(); ?>"><?php _e('E komo mai','basic_hawaiian'); ?></a>
+							<?php echo get_the_post_thumbnail(); ?>
 						</li>
 						<?php endwhile;
 									wp_reset_postdata(); ?>

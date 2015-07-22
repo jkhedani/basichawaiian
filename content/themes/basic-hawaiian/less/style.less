@@ -32,7 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @colorLightGray: rgb(248, 247, 246);
 @colorGray: rgb(208, 207, 206);
 
-@colorLightBlue: rgb(27, 163, 156);
+@colorLightBlue: #337ab7;
 @colorOrange: rgb(255,134,31);
 @colorLightOrange: rgb(239,178,69);
 @colorYellow: rgb(242,212,0);
@@ -171,6 +171,73 @@ body.logged-in {
   }
   #content {
     position: relative;
+  }
+} // body.logged-in
+
+/**
+ * Logged in home page
+ *
+ */
+body.logged-in.home {
+  .message,
+  .coverflow {
+    width: 600px;
+    margin: 0 auto;
+  }
+  .user-avatar {
+    width: 165px;
+    height: 286px;
+    position: absolute;
+    right: 125px;
+    top: 165px;
+    z-index: 2;
+    &.female {
+      background: url('images/female-avatar.png');
+    }
+    &.male {
+      background: url('images/male-avatar.png');
+    }
+  }
+  ul.units {
+    li.unit {
+      position: relative;
+      h1 {
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      h2 {
+        font-weight: 300;
+        font-size: 16px;
+        margin-top: 12px;
+      }
+      a.unit-info {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #FFF;
+        background: @colorLightPurple;
+        width: 20px;
+        height: 20px;
+        border-radius: 10px;
+        display: block;
+      }
+      a.view-unit {
+        color: #FFF;
+        background: #4d4461;
+        z-index: 2;
+        position: relative;
+        margin-top: 318px;
+        padding: 10px 40px;
+      }
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+        width: 100%;
+        height: auto;
+        z-index: 1;
+      }
+    }
   }
 }
 
@@ -480,12 +547,13 @@ body.not-logged-in {
 	.coverflow-counter {
 		width: 12px;
 		height: 12px;
+    border-radius: 6px;
 		display: inline-block;
 		margin-left: 7px;
 		background-color: @colorLightGray;
 		opacity: 0.5;
 		&:first-child { margin-left: 0; }
-		&.active { opacity: 1.0; background-color: @colorLightBlue; }
+		&.active { opacity: 1.0; background-color: #4d4461; }
 	}
 }
 
@@ -499,17 +567,6 @@ body.not-logged-in {
 #sign-in, #sign-up {
   float: right;
   margin-left: 20px;
-}
-
-/**
- * Dashboard
- */
-body.logged-in.home {
-  .message,
-  .coverflow {
-    width: 600px;
-    margin: 0 auto;
-  }
 }
 
 /**
