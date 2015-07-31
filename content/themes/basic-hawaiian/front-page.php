@@ -33,13 +33,13 @@ get_header(); ?>
 							<h2><?php echo get_field('home_secondary_title'); ?></h2>
 							<p><?php echo get_field('home_primary_blurb'); ?></p>
 							<?php
-								echo smlsubform(array(
-									"showname" 		=> false,
-									"emailtxt" 		=> "",
-									"emailholder" => "example@example.com",
-									"submittxt"		=> "Notify Me",
-									"thankyou"		=> "Thanks for your interest! We'll let you know when you can sign up for Basic Hawaiian."
-								));
+								// echo smlsubform(array(
+								// 	"showname" 		=> false,
+								// 	"emailtxt" 		=> "",
+								// 	"emailholder" => "example@example.com",
+								// 	"submittxt"		=> "Notify Me",
+								// 	"thankyou"		=> "Thanks for your interest! We'll let you know when you can sign up for Basic Hawaiian."
+								// ));
 							?>
 						</div>
 					</div>
@@ -144,6 +144,11 @@ get_header(); ?>
 
 	<?php else : ?>
 
+		<?php
+			$user = wp_get_current_user();
+			$user_id = $user->ID;
+		?>
+
 		<div id="primary" class="content-area col-sm-9">
 			<div id="content" class="site-content" role="main">
 
@@ -177,18 +182,30 @@ get_header(); ?>
 
 				<div class="coverflow">
 					<ul class="units">
-						<li class="unit shop">
+
+						<li class="unit shop disabled">
 							<h1>Shop</h1>
 							<h2>Redeem points for gear &amp; upgrades!</h2>
 							<a class="view-unit btn btn-cta blue" href="#">Shop</a>
 							<a class="unit-info" href="#">?</a>
+							<img src="<?php echo get_template_directory_uri(); ?>/images/shop-home-hero.png" />
 						</li>
+
+						<?php
+							$userPaymentType = get_user_meta( $user_id, 'paid', true );
+							error_log($userPaymentType);
+							if ( $userPaymentType === 'one_unit' ) {
+								$userPaymentClass = 'disabled';
+							} elseif ( $userPaymentType === 'four_unit' ) {
+								$userPaymentClass = '';
+							}
+						?>
 						<?php $unitCount = 0; ?>
 						<?php while ( $units->have_posts() ) : $units->the_post(); ?>
 						<?php if ( !$unitCount++ ) : ?>
 						<li id="<?php echo $post->post_name; ?>" class="unit active <?php echo $post->post_name; ?>">
 						<?php else : ?>
-						<li id="<?php echo $post->post_name; ?>" class="unit <?php echo $post->post_name; ?>">
+						<li id="<?php echo $post->post_name; ?>" class="unit <?php echo $post->post_name; ?> <?php echo $userPaymentClass; ?>">
 						<?php endif; ?>
 							<h1><?php echo get_the_title(); ?></h1>
 							<?php if ( get_field('unit_subtitle') ) : ?>
@@ -200,6 +217,7 @@ get_header(); ?>
 						</li>
 						<?php endwhile;
 									wp_reset_postdata(); ?>
+
 					</ul>
 					<div class="coverflow-controls">
 						<a href="#" data-slide-to="prev"><i class="fa fa-chevron-left"></i></a>
@@ -220,15 +238,13 @@ get_header(); ?>
 
 					<!-- User Avatar -->
 					<?php
-						$user = wp_get_current_user();
-		    		$user_id = $user->ID;
 						$gender = get_user_meta( $user_id, 'gender', true );
 					?>
 					<div class="user-avatar <?php echo $gender; ?> default"></div>
 				</div><!-- .coverflow -->
 
 				<!-- Welcome Modal -->
-				<button type="button" id="welcome-modal-trigger" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#welcome-modal">View Modal</button>
+				<!--<button type="button" id="welcome-modal-trigger" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#welcome-modal">View Modal</button>
 
 				<div class="modal fade" id="welcome-modal" tabindex="-1" role="dialog" aria-labelledby="welcome-modal" aria-hidden="true">
 					<div class="modal-dialog">

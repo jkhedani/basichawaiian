@@ -89,7 +89,15 @@ function basic_hawaiian_setup() {
 	/**
 	 * Add User Roles
 	 */
-	if ( !role_exists('student') ) :
+	 if ( !role_exists('nonpaid') ) :
+ 		$result = add_role(
+ 			'nonpaid',
+ 			__( 'Nonpaid' ),
+ 			array(
+ 					'read'         => true,  // true allows this capability
+ 			)
+ 		);
+	elseif ( !role_exists('student') ) :
 		$result = add_role(
 			'student',
 			__( 'Student' ),
@@ -254,26 +262,10 @@ function custom_body_classes( $classes ) {
 add_filter( 'body_class', 'custom_body_classes' );
 
 /**
- * Redirect Users to Home Page If Not Logged In
- */
-// function not_logged_in_redirect() {
-// 	$protocol = 'http://'; // discover the correct protocol to use
-//  	if( !empty( $_SERVER['HTTPS'] ) ) {
-// 		$protocol='https://';
-// 	}
-// 	$current_url = $protocol . $_SERVER["HTTP_HOST"] . $_SERVER[ 'REQUEST_URI' ];
-// 	$home_url = get_home_url() . '/';
-// 	if ( !is_user_logged_in() && $current_url !== $home_url ) {
-// 		wp_redirect( $home_url );
-// 		exit;
-// 	}
-// }
-// add_action( 'init', 'not_logged_in_redirect' );
-
-/**
  * Stripe
  */
-require get_template_directory() . '/vendor/stripe/stripe-php/init.php';
+// require get_template_directory() . '/vendor/stripe/stripe-php/init.php';
+require get_template_directory() . '/inc/stripe/stripe-process-payment.php';
 
 /**
  * Enqueue scripts and styles.
@@ -304,9 +296,7 @@ function basic_hawaiian_scripts() {
 	wp_localize_script('stripe-processing', 'stripe_vars', array(
 		'publishable_key' => $publishable,
 	));
-
 	wp_enqueue_script( 'basic-hawaiian-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
 	wp_enqueue_script( 'basic-hawaiian-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	// AJAX Calls
@@ -806,44 +796,6 @@ add_action( 'init', 'BASICHWN_post_types' );
 
 
 /**
- * Registration Form Additions
- * https://codex.wordpress.org/Customizing_the_Registration_Form
- *
- */
-
-//1. Add a new form element...
-add_action( 'register_form', 'myplugin_register_form' );
-function myplugin_register_form() {
-
-  $registration_key = ( ! empty( $_POST['registration_key'] ) ) ? trim( $_POST['registration_key'] ) : ''; ?>
-  <p>
-    <label for="registration_key"><?php _e( 'Registration Key', 'basichawaiian' ) ?><br />
-    <input type="text" name="registration_key" id="registration_key" class="input" value="<?php echo esc_attr( wp_unslash( $registration_key ) ); ?>" size="25" /></label>
-  </p>
-  <?php
-}
-
-//2. Add validation. In this case, we make sure first_name is required.
-add_filter( 'registration_errors', 'myplugin_registration_errors', 10, 3 );
-function myplugin_registration_errors( $errors, $sanitized_user_login, $user_email ) {
-
-    if ( empty( $_POST['registration_key'] ) || ! empty( $_POST['registration_key'] ) && trim( $_POST['registration_key'] ) == '' ) {
-        $errors->add( 'registration_key_error', __( '<strong>ERROR</strong>: You must provide a registration key.', 'basichawaiian' ) );
-    }
-
-    return $errors;
-}
-
-//3. Finally, save our extra registration user meta.
-// add_action( 'user_register', 'myplugin_user_register' );
-// function myplugin_user_register( $user_id ) {
-//     if ( ! empty( $_POST['first_name'] ) ) {
-//         update_user_meta( $user_id, 'first_name', trim( $_POST['first_name'] ) );
-//     }
-// }
-
-
-/**
  * Add Menu Pages
  * Used for Scoresheets, Classrooms, etc.
  * @url https://codex.wordpress.org/Function_Reference/add_menu_page
@@ -1172,9 +1124,43 @@ function the_excerpt_max_charlength ( $charlength ) {
   }
 }
 
+/**
+ * Convert cents to dollars
+ */
+function cents_to_dollars($cents) {
+	$dollars  = '$';
+	// $dollars .= number_format($cents/100,2,'.','');
+	$dollars .= $cents/100;
+	return $dollars;
+}
+
 /*
  * Filter external links and append rel="external"
  */
 function filter_links_rel_external( $content ) {
   return preg_replace( '/\<a /i', '<a rel="external" ', $content );
 }
+
+/**
+ * Redirect Users to Home Page If Not Logged In
+ */
+ function my_login_redirect( $redirect_to, $request, $user ) {
+ 	//is there a user to check?
+ 	global $user;
+ 	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+ 		//check for admins
+ 		error_log(print_r($user->roles,true));
+ 		if ( in_array( 'administrator', $user->roles ) ) {
+ 			// redirect them to the default place
+ 			// return $redirect_to;
+			return $redirect_to;
+ 		} elseif ( in_array( 'nonpaid', $user->roles ) ) {
+ 			return home_url('/payment');
+ 		} else {
+ 			return home_url();
+ 		}
+ 	} else {
+ 		return $redirect_to;
+ 	}
+ }
+ add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );

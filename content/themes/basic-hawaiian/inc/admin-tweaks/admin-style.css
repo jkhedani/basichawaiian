@@ -12,7 +12,7 @@ body.wp-admin.not-admin #wpfooter {
 body.wp-admin.not-admin #wpcontent .wrap { margin: 40px 0 20px; }
 
 body.login {
-	background: url('../../images/public/marketing-bg.jpg') no-repeat center center fixed;
+	background: url('../../images/public-bg-65.jpg') no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -24,11 +24,29 @@ body.login div#login {
 }
 
 body.login div#login h1 a {
-    background-size: auto;
-    background-image: url('../../images/public/bh-beta-logo.png');
-    width: auto;
+    background-image: url('../../images/logo-new-large.png');
+		-webkit-background-size: 100%;
+		-moz-background-size: 100%;
+		-o-background-size: 100%;
+		background-size: 100%;
+		width: auto;
+		height: 180px;
+		margin-top: -40px;
 }
 body.login p#nav,
 body.login p#backtoblog { padding: 0; margin-top: 10px; }
 body.login p#nav a,
-body.login p#backtoblog a { color: #FFF; }
+body.login p#backtoblog a { color: #4d4461; }
+
+body.login .message {
+	border-color: #bfbfd1;
+}
+body.login #wp-submit {
+	background: #4d4461;
+	border: none;
+	padding: 20px;
+	border-radius:6px;
+	box-shadow: none;
+	line-height: 1px;
+	width: 100%;
+}

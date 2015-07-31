@@ -4,7 +4,6 @@ jQuery(document).ready(function($) {
 
   function stripeResponseHandler(status, response) {
     var $form = $('#payment-form');
-
      if (response.error) {
        // Show the errors on the form
        $form.find('.payment-errors').text(response.error.message);
@@ -21,12 +20,9 @@ jQuery(document).ready(function($) {
 
   $('#payment-form').submit(function(event) {
     var $form = $(this);
-
     // Disable the submit button to prevent repeated clicks
     $form.find('button').prop('disabled', true);
-
     Stripe.card.createToken($form, stripeResponseHandler);
-
     // Prevent the form from submitting with the default action
     return false;
   });
@@ -44,6 +40,21 @@ jQuery(document).ready(function($) {
       // Add cost attribute to payment form
       var cost = $(this).attr('data-cost');
       $('body').find('input[name="cost"]').val(cost);
+      // Add cost type to payment form
+      var cost_type = $(this).attr('data-cost-type');
+      $('body').find('input[name="cost_type"]').val(cost_type);
+      // Update payment details
+      var cost_human_readable = '$' + cost/100;
+      var cost_blurb = $(this).attr('data-cost-blurb');
+      $('body').find('.payment-cost h2').html(cost_human_readable);
+      $('body').find('.payment-cost p').html(cost_blurb);
+    });
+
+    // Allow users to
+    $('#back-to-enrollment').on('click',function() {
+      // Hide show enrollment/payment
+      $('.slide').removeClass('active');
+      $('#enrollment').addClass('active');
     });
 
     // Catch parameter value

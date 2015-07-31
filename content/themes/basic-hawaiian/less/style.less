@@ -201,6 +201,9 @@ body.logged-in.home {
   ul.units {
     li.unit {
       position: relative;
+      &.disabled {
+        opacity: 0.5;
+      }
       h1 {
         font-weight: 300;
         margin-top: 10px;
@@ -242,10 +245,17 @@ body.logged-in.home {
 }
 
 /**
- * Header
+ *  Not Logged IN
  */
+body.not-logged-in.home {
+  background: url('images/beige-texture.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 body.not-logged-in {
-  background: url('images/beige-texture.png');
+  background: #FFF;
   // background: url('images/public-bg-65.jpg');
   // background-size: cover;
   // background-repeat: no-repeat;
@@ -272,6 +282,19 @@ body.not-logged-in {
       margin-bottom: 12px;
     }
   }
+
+
+  #primary {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #FFF;
+  }
+  footer#colophon {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
   .public-content-container {
     padding: 0;
     margin-bottom: 800px;
@@ -447,6 +470,57 @@ body.not-logged-in {
 }
 
 /**
+ * Page Template: Payment
+ */
+body.page-template-page-payment {
+  background: url('images/public-bg-65.jpg');
+  #site-navigation {
+    display: none;
+  }
+  #primary-twin {
+    background: rgba(255,255,255,0.9);
+    padding: 40px;
+    margin-top: 15%;
+  }
+  .slide {
+    text-align: center;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  a.logo {
+    display: block;
+    width: 320px;
+    margin: -125px auto 25px;
+    img {
+      width: 100%;
+    }
+  }
+  h4 {
+    margin-bottom: 30px;
+  }
+  a#powered-by-stripe {
+    width: 125px;
+    display: block;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  form#payment-form {
+    margin: 25px auto;
+    .input-group-addon {
+      min-width: 40px;
+    }
+    button[type="submit"] {
+      margin-top: 15px;
+      background: @colorDarkPurple;
+    }
+  }
+}
+
+/**
  * Icons
  */
 .icon {
@@ -616,7 +690,7 @@ body.single-units {
     position: relative;
     li.module {
       display: block;
-      margin: 0 0 20px 0;
+      margin: 0 20px 20px 0;
       padding: 0;
       // width: 640px;
     }
@@ -691,12 +765,137 @@ body.single-units {
 }
 
 /**
+ * Footer
+ *
+ */
+footer#colophon {
+  .clearfix();
+  p, ul, li {
+    display: inline-block;
+
+  }
+}
+
+/**
+ * Sign In Modal
+ */
+.modal#signIn {
+  text-align: center;
+  .modal-dialog {
+    width: 400px;
+    margin: 120px auto;
+  }
+  .modal-header {
+    h4.modal-title {
+      color: @colorDarkPurple;
+    }
+    .logo {
+      width: 305px;
+      height: 175px;
+      margin: -82px auto 0px;
+      background: url('images/logo-new-large.png') no-repeat;
+      -webkit-background-size: cover;
+      background-size: 100%;
+    }
+    button.close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .modal-body {
+    padding: 20px 30px;
+    form {
+      label {
+        width: 100%;
+        text-align: left;
+        text-tranform: uppercase;
+        color: #DDDD;
+        font-weight: 300;
+        margin-top: 10px;
+      }
+      input {
+        width: 100%;
+        padding: 10px;
+      }
+      p.login-remember {
+        margin-top: 15px;
+      }
+      input#rememberme {
+        width: auto;
+        float: right;
+      }
+      input#wp-submit {
+        background: @colorDarkPurple;
+        border: none;
+        box-shadow: none;
+        color: #FFF;
+      }
+    }
+  }
+  .modal-footer {
+    padding: 15px 30px;
+  }
+}
+
+/**
+ * Pricing
+ */
+ul.pricing {
+  list-style: none;
+  padding: 0;
+  .clearfix();
+  li {
+    display: block;
+    width: 190px;
+    padding: 20px;
+    float: left;
+    background: #EFEFEF;
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0;
+    }
+    h2 {
+      font-size: 21px;
+      margin-top: 8px;
+    }
+    hr {
+      border-top: 1px solid #BBB;
+      marigin: 10px 0;
+    }
+    a.enroll {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+/**
+ * Mail Subscribe List
+ */
+.sml_thankyou {
+  padding: 20px;
+  border-radius: 5px;
+  color: #FFF;
+  border: 1px solid @colorUIDarkGreen;
+  background-color: @colorUIGreen;
+}
+
+
+/**
  * Lesson Pages
  */
 body.logged-in.single-video_lessons,
 body.logged-in.single-vocabulary_lessons {
-  background: @colorLightPurple;
+  // background: @colorLightPurple;
   // background: url('images/beige-texture.png');
+  background: url('images/dashboard-bg-blur.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   article {
     margin: 0 auto;
     max-width: 960px;
@@ -733,15 +932,31 @@ body.logged-in.single-vocabulary_lessons {
     width: 100%;
     background-image: none;
   }
+
+  .lesson-footer {
+    .lesson-results {
+      width: 645px;
+      height: 415px;
+      margin: 150px auto;
+      color: #FFF;
+      text-align: center;
+      overflow: hidden;
+      &.success {
+        &.female {
+          background: url('images/hooray-girl.jpg') no-repeat;
+        }
+      }
+    }
+  }
 }
 
 /**
- * Mail Subscribe List
+ * Video Lesson
  */
-.sml_thankyou {
-  padding: 20px;
-  border-radius: 5px;
-  color: #FFF;
-  border: 1px solid @colorUIDarkGreen;
-  background-color: @colorUIGreen;
+body.logged-in.single-video_lessons {
+  .lesson-footer {
+    .check-lesson, .advance-lesson {
+      display: none;
+    }
+  }
 }

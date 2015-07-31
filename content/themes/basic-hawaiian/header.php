@@ -17,6 +17,20 @@
 <?php wp_head(); ?>
 </head>
 
+<?php
+	// User Redirect
+	// Redirect non-logged users from seeing content
+	// without paying.
+	$user = wp_get_current_user();
+	if( !is_user_logged_in() && !is_page() ) {
+    wp_redirect( home_url() );
+    exit;
+	} elseif ( is_user_logged_in() && in_array('nonpaid',$user->roles) && !is_page('payment') ) {
+		wp_redirect( home_url('/payment') );
+    exit;
+	}
+?>
+
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site container-fluid">
 	<div class="row">
@@ -37,9 +51,9 @@
 			    </div>
 					<div class="collapse navbar-collapse">
 						<!-- Sign In & Up -->
-						<a type="button" id="sign-in" class="btn btn-primary navbar-btn" href="<?php echo get_home_url(); ?>/sign-up">Sign Up</a>
+						<a type="button" id="sign-up" class="btn btn-primary navbar-btn" href="<?php echo wp_registration_url(); ?>">Sign Up</a>
 						<!-- Button trigger modal -->
-						<button type="button" id="sign-up" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#myModal">Sign In</button>
+						<button type="button" id="sign-in" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#signIn">Sign In</button>
 						<!-- Public Navigation -->
 						<?php
 							wp_nav_menu(array(

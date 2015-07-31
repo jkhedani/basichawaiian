@@ -2,6 +2,9 @@
 /**
  * @package Basic Hawaiian
  */
+
+$unitID = $post->ID;
+
 ?>
 
 <!--<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>-->
@@ -25,7 +28,6 @@
 				'orderby'		=> 'post__in',
 				'order'			=> 'ASC'
 			));
-			error_log($modules->post_count);
 		?>
 		<div class="coverflow">
 			<ul class="modules">
@@ -75,7 +77,7 @@
 							<ol class="lessons">
 								<?php while( $lessons->have_posts() ) : $lessons->the_post(); ?>
 								<li class="lesson">
-									<a href="<?php the_permalink(); ?>">
+									<a href="<?php the_permalink(); ?>?backToModule=<?php echo $moduleCount; ?>&amp;backToUnit=<?php echo $unitID; ?>">
 										<?php $post_type_object = get_post_type_object( get_post_type() ); ?>
 										<p class="lesson-type"><?php echo $post_type_object->labels->name; ?> <i class="fa fa-pencil"></i></p>
 										<i class="icon icon-unit-currency"></i>

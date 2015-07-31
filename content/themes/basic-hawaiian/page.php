@@ -12,12 +12,20 @@
 
 get_header(); ?>
 
-	<div id="primary" class="col-sm-9 content-area">
+	<?php if ( is_user_logged_in() ) : ?>
+		<div id="primary" class="col-sm-9 content-area">
+	<?php else : ?>
+		<div id="primary" class="col-sm-12 content-area">
+	<?php endif; ?>
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php if ( is_user_logged_in() ) : ?>
+					<?php get_template_part( 'template-parts/content', 'page' ); ?>
+				<?php else : ?>
+					<?php get_template_part( 'template-parts/content', 'page-public' ); ?>
+				<?php endif; ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
