@@ -692,6 +692,7 @@ body.single-units {
     padding: 0;
     margin: 0;
     position: relative;
+    z-index: 9;
     li.module {
       display: block;
       margin: 0 56px 20px 0;
@@ -727,10 +728,21 @@ body.single-units {
         text-align: center;
       }
       .image-wrapper {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
         background: #DDD;
         margin: 0 auto;
+        background: url('images/topic-icons.png');
+        background-size: auto 100%;
+        &.kahua-kanaka { background-position: -1px 0;}
+        &.huaolelo { background-position: -54px 0; }
+        &.haawina { background-position: -107px 0; }
+        &.hoomaamaa { background-position: -161px 0; }
+        &.olelo-noeau { background-position: -214px 0;  }
+        &.mele { background-position: -266px 0; }
+        &.oli { background-position: -319px 0; }
+        &.heluhelu { background-position: -373px 0; }
+        &.ohana { background-position: -426px 0; }
       }
     }
   }
@@ -751,12 +763,15 @@ body.single-units {
       border: 1px solid @colorGray;
       border-radius: 7px;
       background: #FFF;
+      font-weight: 600;
+      font-size: 17px;
       &:hover {
         text-decoration: none;
         background: rgba(235,235,235,0.5);
       }
       .lesson-type {
-        font-weight: 600;
+        font-weight: 300;
+        font-size: 14px;
         i {
           left: 15px;
           right: auto;
@@ -897,7 +912,10 @@ ul.pricing {
 body.logged-in.single-video_lessons,
 body.logged-in.single-vocabulary_lessons,
 body.logged-in.single-instruction_lessons,
-body.logged-in.single-readings {
+body.logged-in.single-readings,
+body.logged-in.single-phrases_lessons,
+body.logged-in.single-chants_lessons,
+body.logged-in.single-song_lessons {
   // background: @colorLightPurple;
   // background: url('images/beige-texture.png');
   background: url('images/dashboard-bg-blur.jpg') no-repeat center center fixed;
@@ -1168,7 +1186,19 @@ body.logged-in.single-readings {
   // Audio
   .audio-toggle {
     width: 35px;
+    color: #FFF;
     border: 1px solid #BBB;
+    background: rgb(192,192,192);
+    padding: 7px 10px;
+    border-radius: 4px;
+  }
+
+  // Lesson Choices (test questions)
+  ul.choices {
+    padding: 0;
+    li {
+      list-style: none;
+    }
   }
 
 }
@@ -1230,17 +1260,21 @@ body.logged-in.single-vocabulary_lessons {
       float: left;
     }
     .audio-toggle {
-      float: left;
-      margin: 5px 10px 0 10px;
-      background: none;
-      border-radius: 15px;
+      float: right;
+      margin: 2px 0 0 10px;
+      padding: 3px;
+      width: 27px
     }
     .show-translation {
-      float: left;
+      float: right;
       margin: 6px 0 0 0;
     }
     .image-wrapper {
       clear: left;
+      img {
+        width: 100%;
+        height: auto;
+      }
       .image-substitute {
         display: block;
         color: #FFF;
@@ -1251,10 +1285,63 @@ body.logged-in.single-vocabulary_lessons {
         width: 250px;
       }
     }
+    .cards {
+      .card.test {
+        margin-top: 53px;
+        .image-wrapper {
+          height: 90%;
+          max-height: 90%;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        p.choice-title {
+          text-align: center;
+          padding: 20px;
+        }
+        .audio-toggle {
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
   }
   .lesson-footer {
     #advance-lesson {
       display: block;
+    }
+    // #finish-lesson {
+    //   display: block;
+    // }
+  }
+}
+
+/**
+ * Phrases, Chants, Songs
+ */
+body.logged-in.single-phrases_lessons,
+body.logged-in.single-chants_lessons,
+body.logged-in.single-song_lessons {
+  .lesson-content {
+    ul.choices {
+      margin-top: 20px;
+      li {
+        &:first-child {
+          padding-left: 0;
+        }
+        a {
+          background: @colorDarkPurple;
+          color: #FFF;
+          text-align: center;
+          padding: 15px 20px;
+          width: 100%;
+          display: block;
+          cursor: pointer;
+        }
+      }
     }
   }
 }

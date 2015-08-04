@@ -57,9 +57,32 @@ $user = wp_get_current_user();
 						<li class="topic">
 							<div class="topic-info">
 								<p class="topic-title"><?php the_title(); ?></p>
-								<div class="image-wrapper">
+								<?php
+									$title = get_the_title();
+									if ( strpos($title,'Kahua') !== false ) {
+										$topicTypeClass = 'kahua-kanaka';
+									} else if ( strpos($title,'Huaʻōlelo') !== false ) {
+										$topicTypeClass = 'huaolelo';
+									} else if ( strpos($title,'awina') !== false ) {
+										$topicTypeClass = 'haawina';
+									} else if ( strpos($title,'Hoʻomaʻamaʻa') !== false ) {
+										$topicTypeClass = 'hoomaamaa';
+									} else if ( strpos($title,'Noʻeau') !== false ) {
+										$topicTypeClass = 'olelo-noeau';
+									} else if ( strpos($title,'Mele') !== false ) {
+										$topicTypeClass = 'mele';
+									} else if ( strpos($title,'Oli') !== false ) {
+										$topicTypeClass = 'oli';
+									} else if ( strpos($title,'Heluhelu') !== false ) {
+										$topicTypeClass = 'heluhelu';
+									} else if ( strpos($title,'ʻOhana') !== false ) {
+										$topicTypeClass = 'ohana';
+									} else {
+										$topicTypeClass = 'kahua-kanaka';
+									}
 
-								</div>
+								?>
+								<div class="image-wrapper <?php echo $topicTypeClass; ?>"></div>
 							</div>
 							<?php
 								/**
@@ -122,6 +145,6 @@ $user = wp_get_current_user();
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php basic_hawaiian_entry_footer(); ?>
+		<?php //basic_hawaiian_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

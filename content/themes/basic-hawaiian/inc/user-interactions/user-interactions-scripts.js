@@ -66,11 +66,27 @@ jQuery(document).ready(function($) {
    * Global: Finish Lesson
    */
   $('#finish-lesson').on('click', function() {
+
+    // Global Data
     var lessonOutcome = $(this).attr('data-lesson-outcome');
     var data = {
-      "postID" : $(this).attr('data-post-id'),
-      "userID" : $(this).attr('data-user-id'),
+      "postID"  : $(this).attr('data-post-id'),
+      "userID"  : $(this).attr('data-user-id'),
+      "outcome" : lessonOutcome,
     };
+
+    // Test Data
+    var results = {};
+    $('a.choice.correct').each(function() {
+      var choice_id = $(this).attr('data-id');
+      var choice_O = $(this).attr('data-O');
+      var choice_X = $(this).attr('data-X');
+      results[choice_id] = { 'O' : choice_O, 'X' : choice_X };
+    });
+    data['results'] = results;
+
+    console.log(data);
+
     $.post(user_interactions_scripts.ajaxurl, {
       dataType: "jsonp",
       action: 'finish_lesson',
@@ -93,7 +109,6 @@ jQuery(document).ready(function($) {
         }, 1000);
       } else {
         // Bad Response message
-        console.log('asdf');
       }
     });
 
@@ -116,10 +131,17 @@ jQuery(document).ready(function($) {
 
       // Correct answer
       if ( $(this).hasClass('correct') ) {
+        // Increment O score
+        $(this).attr('data-O',1);
+        // Show message
         $('.lesson-message.correct').show().removeClass('slideOutDown').addClass('slideInUp animated');
       // Incorrect answer
       } else {
+        var correct_answer_object = $(this).parents('ul').children('li').find('a.correct');
         var correct_answer = $(this).parents('ul').children('li').find('a.correct').text();
+        // Increment X score on correct answer
+        correct_answer_object.attr('data-X',1);
+        // Show message
         $('.lesson-message.wrong strong').html(correct_answer);
         $('.lesson-message.wrong').show().removeClass('slideOutDown').addClass('slideInUp animated');
         // Subtract

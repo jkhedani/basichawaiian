@@ -28,6 +28,15 @@ get_header(); ?>
 				case 'readings':
 					get_template_part( 'template-parts/single', 'lesson-readings' );
 					break;
+				case 'phrases_lessons':
+					get_template_part( 'template-parts/single', 'lesson-phrases' );
+					break;
+				case 'chants_lessons':
+					get_template_part( 'template-parts/single', 'lesson-chants' );
+					break;
+				case 'song_lessons':
+					get_template_part( 'template-parts/single', 'lesson-song' );
+					break;
 			}
 		?>
 
