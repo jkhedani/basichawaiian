@@ -16,11 +16,17 @@ get_header(); ?>
 				case 'units':
 					get_template_part( 'template-parts/single', 'unit' );
 					break;
+				case 'instruction_lessons':
+					get_template_part( 'template-parts/single', 'lesson-instruction' );
+					break;
 				case 'video_lessons':
 					get_template_part( 'template-parts/single', 'lesson-video' );
 					break;
 				case 'vocabulary_lessons':
 					get_template_part( 'template-parts/single', 'lesson-vocabulary' );
+					break;
+				case 'readings':
+					get_template_part( 'template-parts/single', 'lesson-readings' );
 					break;
 			}
 		?>

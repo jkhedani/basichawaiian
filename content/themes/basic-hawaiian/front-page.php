@@ -147,6 +147,8 @@ get_header(); ?>
 		<?php
 			$user = wp_get_current_user();
 			$user_id = $user->ID;
+			$user = wp_get_current_user();
+			var_dump($user->ID);
 		?>
 
 		<div id="primary" class="content-area col-sm-9">

@@ -4,7 +4,7 @@
  */
 
 $unitID = $post->ID;
-
+$user = wp_get_current_user();
 ?>
 
 <!--<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>-->
@@ -76,11 +76,19 @@ $unitID = $post->ID;
 							?>
 							<ol class="lessons">
 								<?php while( $lessons->have_posts() ) : $lessons->the_post(); ?>
+								<?php
+									$lessonResults = json_decode(get_user_meta($user->ID, $post->ID,true));
+									if ( $lessonResults->completed >= 1 ) {
+										$iconClass = 'completed';
+									} else {
+										$iconClass = '';
+									}
+								?>
 								<li class="lesson">
-									<a href="<?php the_permalink(); ?>?backToModule=<?php echo $moduleCount; ?>&amp;backToUnit=<?php echo $unitID; ?>">
+									<a href="<?php the_permalink(); ?>?module=<?php echo $moduleCount; ?>&amp;unit=<?php echo $unitID; ?>">
 										<?php $post_type_object = get_post_type_object( get_post_type() ); ?>
-										<p class="lesson-type"><?php echo $post_type_object->labels->name; ?> <i class="fa fa-pencil"></i></p>
-										<i class="icon icon-unit-currency"></i>
+										<p class="lesson-type"><?php echo $post_type_object->labels->name; ?> <!--<i class="fa fa-pencil">--></i></p>
+										<i class="icon icon-unit-currency <?php echo $iconClass; ?>"></i>
 										<?php the_title(); ?>
 									</a>
 								</li>

@@ -2,15 +2,26 @@
 /**
  * @package Basic Hawaiian
  */
+
+get_template_part('template-parts/single','lesson-header');
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<h2 class="lesson-instructions">
+			<?php
+				if ( get_field( 'optional_instructions' ) ) :
+					// Display optional instructions if they exist.
+					echo get_field( 'optional_instructions' );
+				else :
+					echo 'Watch and learn from the video below.';
+				endif;
+			?>
+		</h2>
+	</header><!-- .entry-header -->
 
-	<?php get_template_part('template-parts/single','lesson-header'); ?>
-
-	<div class="entry-content">
+	<div class="lesson-content row">
 		<!-- Video Player -->
-		<div class="video-player-container">
+		<div class="video-player-container col-sm-8">
 			<?php
 				// Retrieve the video url
 				$videourl = get_field( 'youtube_video_url' );
@@ -23,10 +34,10 @@
 					$video_id = ''; // Maybe find a better fallback
 				}
 			?>
-			<iframe width="560" height="315" src="//www.youtube.com/embed/<?php echo $video_id; ?>?showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<iframe width="100%" height="315" src="//www.youtube.com/embed/<?php echo $video_id; ?>?showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 		<!-- Video Metadata -->
-		<div class="video-player-metadata">
+		<div class="video-player-metadata col-sm-4">
 			<?php // youtube metadata
 				/**
 				 * Youtube
@@ -87,5 +98,6 @@
 		</div>
 	</div><!-- .entry-content -->
 
-	<?php get_template_part('template-parts/single','lesson-footer'); ?>
-</article><!-- #post-## -->
+	<footer class="lesson-footer row">
+
+<?php get_template_part('template-parts/single','lesson-footer'); ?>

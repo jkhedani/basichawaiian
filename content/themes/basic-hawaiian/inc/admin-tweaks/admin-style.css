@@ -31,12 +31,19 @@ body.login div#login h1 a {
 		background-size: 100%;
 		width: auto;
 		height: 180px;
-		margin-top: -40px;
+		margin-top: -100px;
 }
 body.login p#nav,
 body.login p#backtoblog { padding: 0; margin-top: 10px; }
 body.login p#nav a,
 body.login p#backtoblog a { color: #4d4461; }
+body.login div#login p.forgetmenot {
+	margin-bottom: 15px;
+}
+
+body.login div#login p.gender-select-container {
+	margin-bottom: 15px;
+}
 
 body.login .message {
 	border-color: #bfbfd1;

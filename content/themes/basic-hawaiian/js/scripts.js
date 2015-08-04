@@ -88,11 +88,4 @@ jQuery(document).ready(function($){
 		$('.coverflow').coverflow();
 	}
 
-	/**
-	 * Lesson Scripts
-	 */
-
-	// Finish Lesson
-
-
 }); //document.ready
