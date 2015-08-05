@@ -22696,3 +22696,49 @@
 [05-Aug-2015 01:25:08 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/wp/wp-includes/functions.wp-scripts.php on line 227
 [05-Aug-2015 01:25:08 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
 [05-Aug-2015 01:25:11 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:26:08 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:11 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:33 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[05-Aug-2015 01:27:37 UTC] 
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined variable: userPaymentClass in /var/www/content/themes/basic-hawaiian/front-page.php on line 210
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined variable: userPaymentClass in /var/www/content/themes/basic-hawaiian/front-page.php on line 210
+[05-Aug-2015 01:27:37 UTC] PHP Notice:  Undefined variable: userPaymentClass in /var/www/content/themes/basic-hawaiian/front-page.php on line 210
+[05-Aug-2015 01:27:42 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:43 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:43 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[05-Aug-2015 01:27:43 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[05-Aug-2015 01:27:45 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:27:45 UTC] PHP Notice:  Undefined variable: user in /var/www/content/themes/basic-hawaiian/functions.php on line 1188
+[05-Aug-2015 01:27:45 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/functions.php on line 1188
+[05-Aug-2015 01:28:34 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:29:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:29:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:30:35 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:31:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:31:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:31:35 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:32:55 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:02 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:10 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:10 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[05-Aug-2015 01:33:10 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[05-Aug-2015 01:33:11 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:11 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:12 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:14 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:14 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[05-Aug-2015 01:33:14 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[05-Aug-2015 01:33:15 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/wp/wp-includes/functions.wp-scripts.php on line 227
+[05-Aug-2015 01:33:15 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/wp/wp-includes/functions.wp-scripts.php on line 227
+[05-Aug-2015 01:33:18 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:18 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:23 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:24 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:25 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:25 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 01:33:25 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/wp/wp-includes/functions.wp-scripts.php on line 227
+[05-Aug-2015 01:33:25 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /var/www/wp/wp-includes/functions.wp-scripts.php on line 227

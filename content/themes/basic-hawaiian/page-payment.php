@@ -21,7 +21,7 @@ if ( get_field('stripe_is_live','option') === false ) {
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-new-large.png'?>" alt="Basic Hawaiian Logo" /></a>
 
 			<!-- Slide 1: Enrollment -->
-			<div id="enrollment" class="slide">
+			<div id="enrollment" class="slide active">
 				<h1>Thanks for signing up!</h1>
 				<h4>Please select a course to enroll in. Your semester starts today!</h4>
 
@@ -44,7 +44,7 @@ if ( get_field('stripe_is_live','option') === false ) {
 				</ul>
 			</div>
 
-			<div id="payment" class="slide active">
+			<div id="payment" class="slide">
 				<h1>Payment</h1>
 				<h4>Please enter your payment details.</h4>
 
