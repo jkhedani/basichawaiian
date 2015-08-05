@@ -24418,3 +24418,7 @@
 [05-Aug-2015 23:13:40 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
 [05-Aug-2015 23:13:40 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
 [05-Aug-2015 23:13:58 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 23:17:24 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[05-Aug-2015 23:17:24 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[05-Aug-2015 23:17:24 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[05-Aug-2015 23:17:24 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
