@@ -28,7 +28,7 @@
 			<div class="cards">
 				<div class="card">
 					<div class="toggled-content" id="original-newspaper">
-						<?php echo $originalNewspaper; ?>
+						<img src-"<?php echo $originalNewspaper; ?>" />
 					</div>
 					<div class="toggled-content" id="typed-newspaper">
 						<?php echo $typedNewspaper; ?>
