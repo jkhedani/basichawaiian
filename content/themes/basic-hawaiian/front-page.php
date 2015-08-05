@@ -147,8 +147,6 @@ get_header(); ?>
 		<?php
 			$user = wp_get_current_user();
 			$user_id = $user->ID;
-			$user = wp_get_current_user();
-			var_dump($user->ID);
 		?>
 
 		<div id="primary" class="content-area col-sm-9">
@@ -200,6 +198,8 @@ get_header(); ?>
 								$userPaymentClass = 'disabled';
 							} elseif ( $userPaymentType === 'four_unit' ) {
 								$userPaymentClass = '';
+							} else {
+								$userPaymentClass = 'disabled';
 							}
 						?>
 						<?php $unitCount = 0; ?>
@@ -217,8 +217,8 @@ get_header(); ?>
 							<a class="view-unit btn btn-cta blue" href="<?php echo get_permalink(); ?>"><?php _e('E komo mai','basic_hawaiian'); ?></a>
 							<?php echo get_the_post_thumbnail(); ?>
 						</li>
-						<?php endwhile;
-									wp_reset_postdata(); ?>
+						<?php endwhile; ?>
+						<?php wp_reset_postdata(); ?>
 
 					</ul>
 					<div class="coverflow-controls">

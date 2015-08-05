@@ -34,6 +34,7 @@ if ( get_field('stripe_is_live','option') === false ) {
 						<?php echo cents_to_dollars( get_field('one_unit_cost','option') ); ?>
 						<a class="enroll btn btn-primary" data-cost="<?php echo get_field('one_unit_cost','option'); ?>" data-cost-type="one_unit" data-cost-blurb="One semester worth of lessons and activities.">Enroll</a>
 					</li>
+					<!--
 					<li>
 						<h2 class="large">4 Unit/Kukui</h2>
 						<p>Two years worth of lessons and activities.</p>
@@ -41,6 +42,7 @@ if ( get_field('stripe_is_live','option') === false ) {
 						<?php echo cents_to_dollars( get_field('four_unit_cost','option') ); ?>
 						<a class="enroll btn btn-primary" data-cost="<?php echo get_field('four_unit_cost','option'); ?>" data-cost-type="four_unit" data-cost-blurb="Two years worth of lessons and activities.">Enroll</a>
 					</li>
+					-->
 				</ul>
 			</div>
 

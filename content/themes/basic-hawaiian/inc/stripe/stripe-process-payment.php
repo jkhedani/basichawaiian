@@ -33,16 +33,19 @@ function pippin_stripe_process_payment() {
 
 		// attempt to charge the customer's card
 		try {
+
+			$user = wp_get_current_user();
+
 			\Stripe\Stripe::setApiKey($secret);
 			$charge = \Stripe\Charge::create(array(
 					'amount' => $cost, // $10
 					'currency' => 'usd',
 					'source' => $token,
+					'receipt_email' => $user->data->user_email
 				)
 			);
 
       // If payment is successful, update user role from nonpaid to student
-			$user = wp_get_current_user();
 			$user->remove_role('nonpaid');
 			$user->add_role('student');
 

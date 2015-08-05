@@ -208,7 +208,7 @@ jQuery(document).ready(function($) {
     });
 
     // Show the first available toggled content
-    $('button.toggle-content.available').first().click();
+    $('button.toggle-content.available[data-show-id="typed-okina-kahako"]').click();
 
   }
 
