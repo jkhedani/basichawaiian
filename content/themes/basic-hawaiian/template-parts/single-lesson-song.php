@@ -9,7 +9,8 @@ $song_lines = new WP_Query(array(
 	'post_type' => 'song_lines',
 	'post__in'	=> $related_song_lines,
 	'orderby'		=> 'post__in',
-	'order'			=> 'ASC'
+	'order'			=> 'ASC',
+	'posts_per_page' => -1,
 ));
 
 
@@ -34,7 +35,7 @@ $song_lines = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = ($song_lines->post_count * 0.9) % 2 + 1;
+				$total_health = $song_lines->post_count - round($song_lines->post_count * 0.9) + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>

@@ -9,7 +9,8 @@ $phrases = new WP_Query(array(
 	'post_type' => 'phrases',
 	'post__in'	=> $related_phrases,
 	'orderby'		=> 'post__in',
-	'order'			=> 'ASC'
+	'order'			=> 'ASC',
+	'posts_per_page' => -1,
 ));
 
 ?>
@@ -32,7 +33,7 @@ $phrases = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = ($phrases->post_count * 0.9) % 2 + 1;
+				$total_health = $phrases->post_count - round($phrases->post_count * 0.9) + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>
