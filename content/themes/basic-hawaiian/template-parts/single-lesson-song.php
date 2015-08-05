@@ -34,7 +34,7 @@ $song_lines = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = $song_lines->post_count * 0.9 % 2;
+				$total_health = ($song_lines->post_count * 0.9) % 2 + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>
@@ -71,6 +71,7 @@ $song_lines = new WP_Query(array(
 						<?php } ?>
 					</ul>
 				</div>
+				<?php unset($choices); ?>
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 

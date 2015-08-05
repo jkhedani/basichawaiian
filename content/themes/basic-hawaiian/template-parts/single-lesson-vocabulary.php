@@ -32,7 +32,7 @@ $vocabulary_terms = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = $vocabulary_terms->post_count * 0.9 % 2;
+				$total_health = $vocabulary_terms->post_count * 0.9 % 2 + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>
@@ -52,7 +52,7 @@ $vocabulary_terms = new WP_Query(array(
 								Your browser does not support the audio element.
 						</audio>
 
-						<a class="show-translation" href="#"><div class="translate show-english"></div></a>
+						<a class="show-translation" href="javascript:void(0);"><div class="translate show-english"></div></a>
 
 						<div class="image-wrapper">
 						<?php

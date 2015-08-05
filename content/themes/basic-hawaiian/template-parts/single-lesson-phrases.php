@@ -34,7 +34,7 @@ $phrases = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = $phrases->post_count * 0.9 % 2;
+				$total_health = ($phrases->post_count * 0.9) % 2 + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>

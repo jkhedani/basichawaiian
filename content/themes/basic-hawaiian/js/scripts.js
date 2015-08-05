@@ -30,6 +30,18 @@ jQuery(document).ready(function($){
 		// Apply total width to list wrapper
 		coverflow.find('ul').width( flowwidth );
 
+		// If query parameter is available, assign active
+		function getParameterByName(name) {
+	    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+	    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+	        results = regex.exec(location.search);
+	    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+	  }
+		if ( getParameterByName('module') !== '' ) {
+			var moduleNumber = getParameterByName('module');
+			coverflow.find('ul li.active').removeClass('active');
+			coverflow.find('ul>li:nth-child('+moduleNumber+')').addClass('active');
+		}
 
 		// Scroll to active
 		var activeSlidePosition = coverflow.find('ul li.active').position();
@@ -77,6 +89,7 @@ jQuery(document).ready(function($){
 			}
 			event.preventDefault();
 		});
+
 	}
 
 	// Add coverflow to logged-in home

@@ -8,6 +8,7 @@ $user_id = $user->ID;
 $gender = get_user_meta($user_id,'gender',true);
 $current_url = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 $unitID = $_GET['unit'];
+$module = $_GET['module'];
 ?>
 
 		<div class="lesson-controls">
@@ -22,7 +23,7 @@ $unitID = $_GET['unit'];
 		<p class="lesson-results-blurb">You completed this lesson!</p>
 		<div class="lesson-results-control">
 			<a class="replay-lesson" href="<?php echo $current_url; ?>"><i class="fa fa-refresh"></i></a>
-			<a class="btn btn-primary" href="<?php echo get_permalink($unitID); ?>">continue</a>
+			<a class="btn btn-primary" href="<?php echo get_permalink($unitID); ?>?module=<?php echo $module; ?>">continue</a>
 		</div>
 	</div>
 
@@ -31,7 +32,7 @@ $unitID = $_GET['unit'];
 		<p class="lesson-results-blurb">Give the lesson another try!</p>
 		<div class="lesson-results-control">
 			<a class="replay-lesson" href="<?php echo $current_url; ?>"><i class="fa fa-refresh"></i></a>
-			<a class="btn btn-primary" href="<?php echo get_permalink($unitID); ?>">continue</a>
+			<a class="btn btn-primary" href="<?php echo get_permalink($unitID); ?>?module=<?php echo $module; ?>">continue</a>
 		</div>
 	</div>
 

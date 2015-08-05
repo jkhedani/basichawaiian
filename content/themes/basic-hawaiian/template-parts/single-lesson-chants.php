@@ -4,7 +4,7 @@
  */
 
 // Get Related Terms
-$related_chants = get_field('related_phrases', false, false);
+$related_chants = get_field('related_chant_lines', false, false);
 $chants = new WP_Query(array(
 	'post_type' => 'chant_lines',
 	'post__in'	=> $related_chants,
@@ -34,7 +34,7 @@ $chants = new WP_Query(array(
 		<div class="lesson-health-container">
 			<?php
 				// Percentile for passing: 90%;
-				$total_health = $chants->post_count * 0.9 % 2;
+				$total_health = ($chants->post_count * 0.9) % 2 + 1;
 				for( $i=0; $i < $total_health; $i++ ) {
 			?>
 			<div class="lesson-health"></div>

@@ -63,6 +63,8 @@ $user = wp_get_current_user();
 										$topicTypeClass = 'kahua-kanaka';
 									} else if ( strpos($title,'Huaʻōlelo') !== false ) {
 										$topicTypeClass = 'huaolelo';
+									} else if ( strpos($title,'Ohana') !== false ) {
+										$topicTypeClass = 'ohana';
 									} else if ( strpos($title,'awina') !== false ) {
 										$topicTypeClass = 'haawina';
 									} else if ( strpos($title,'Hoʻomaʻamaʻa') !== false ) {
@@ -75,8 +77,6 @@ $user = wp_get_current_user();
 										$topicTypeClass = 'oli';
 									} else if ( strpos($title,'Heluhelu') !== false ) {
 										$topicTypeClass = 'heluhelu';
-									} else if ( strpos($title,'ʻOhana') !== false ) {
-										$topicTypeClass = 'ohana';
 									} else {
 										$topicTypeClass = 'kahua-kanaka';
 									}
