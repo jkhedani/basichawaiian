@@ -24,7 +24,7 @@ $song_lines = new WP_Query(array(
 					// Display optional instructions if they exist.
 					echo get_field( 'optional_instructions' );
 				else :
-					echo 'Complete te line of the song below.';
+					echo 'Complete the line of the song below.';
 				endif;
 			?>
 		</h2>

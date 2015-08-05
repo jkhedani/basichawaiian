@@ -12,8 +12,6 @@ $phrases = new WP_Query(array(
 	'order'			=> 'ASC'
 ));
 
-
-
 ?>
 
 <?php get_template_part('template-parts/single','lesson-header'); ?>

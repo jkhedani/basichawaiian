@@ -24,7 +24,7 @@ $chants = new WP_Query(array(
 					// Display optional instructions if they exist.
 					echo get_field( 'optional_instructions' );
 				else :
-					echo 'Complete te line of the chant below.';
+					echo 'Complete the line of the chant below.';
 				endif;
 			?>
 		</h2>
