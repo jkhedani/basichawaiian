@@ -71,6 +71,7 @@ $chants = new WP_Query(array(
 						<?php } ?>
 					</ul>
 				</div>
+				<?php unset($choices); ?>
 			<?php endwhile; ?>
 			<?php wp_reset_postdata(); ?>
 

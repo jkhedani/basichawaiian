@@ -14,8 +14,8 @@ Welcome!
 ## Database Considerations
 
 #### Production to Dev
+!!!! MAKE SURE TO UPDATE STRIPE SETTINGS !!!!!
 cat wp_basichawaiian_prod.sql | sed -e 's/http:\/\/basichawaiian.com\/wp/http:\/\/192.168.20.30\/wp/g' | sed -e 's/http:\/\/localhost:8888\/BasicHawaiian/http:\/\/192.168.20.30\/wp/g' | sed -e 's/http:\/\/dev3.localhost\/wp/http:\/\/192.168.20.30\/wp/g' > wp_basichawaiian_dev.sql
-
 
 ### Creating a New Instance
 1. Need a clean ACF setting template.

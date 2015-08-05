@@ -41,7 +41,31 @@ $vocabulary_terms = new WP_Query(array(
 
 		<div class="cards col-sm-12">
 
+			<?php while($vocabulary_terms->have_posts()) : $vocabulary_terms->the_post(); ?>
+					<div class="card col-sm-6">
+						<h3 class="hawaiian"><?php echo get_the_title(); ?></h3>
+						<h3 class="english"><?php echo get_field('english_translation'); ?></h3>
+						<button class="audio-toggle off" data-audio-id="<?php echo $post->ID; ?>" ><i class="fa fa-volume-off"></i></button>
+						<audio id="<?php echo $post->ID; ?>-audio">
+							<source src="<?php echo get_field('audio_track'); ?>" type="audio/ogg">
+							<source src="<?php echo get_field('audio_track_mp3'); ?>" type="audio/mpeg">
+								Your browser does not support the audio element.
+						</audio>
 
+						<a class="show-translation" href="#"><div class="translate show-english"></div></a>
+
+						<div class="image-wrapper">
+						<?php
+							if (get_the_post_thumbnail()) {
+								echo get_the_post_thumbnail($post->ID, 'medium');
+							} else {
+						?>
+						<div class="image-substitute"><?php echo get_field('english_translation'); ?></div>
+						<?php } ?>
+						</div>
+				</div>
+			<?php endwhile; ?>
+			<?php wp_reset_postdata(); ?>
 
 			<?php // Create test cards here. ?>
 			<?php for( $i = 0; $i < $vocabulary_terms->post_count; $i++ ) { ?>
@@ -68,8 +92,8 @@ $vocabulary_terms = new WP_Query(array(
 						?>
 
 						<?php if ( get_field('audio_track', $correctChoice->ID) ) : ?>
-						<button class="audio-toggle off" data-audio-id="<?php echo $post->ID; ?>" ><i class="fa fa-volume-off"></i></button>
-						<audio id="<?php echo $post->ID; ?>-audio">
+						<button class="audio-toggle off" data-audio-id="<?php echo $correctChoice->ID; ?>" ><i class="fa fa-volume-off"></i></button>
+						<audio id="<?php echo $correctChoice->ID; ?>-audio">
 							<source src="<?php echo get_field('audio_track', $correctChoice->ID); ?>" type="audio/ogg">
 							<source src="<?php echo get_field('audio_track_mp3', $correctChoice->ID); ?>" type="audio/mpeg">
 								Your browser does not support the audio element.
@@ -84,7 +108,7 @@ $vocabulary_terms = new WP_Query(array(
 											<?php //var_dump($choices[$k]); ?>
 											<?php echo get_the_post_thumbnail($choices[$k]->ID); ?>
 										</div>
-										<p class="choice-title"><?php echo $choices[$k]->post_title; ?></p>
+										<p class="choice-title"><?php echo get_field('english_translation', $choices[$k]->ID); ?></p>
 									</a>
 								</li>
 						<?php } ?>
@@ -96,38 +120,6 @@ $vocabulary_terms = new WP_Query(array(
 					?>
 				</div>
 			<?php } ?>
-
-
-
-
-			<?php while($vocabulary_terms->have_posts()) : $vocabulary_terms->the_post(); ?>
-					<div class="card col-sm-6">
-						<h3><?php echo get_the_title(); ?></h3>
-						<button class="audio-toggle off" data-audio-id="<?php echo $post->ID; ?>" ><i class="fa fa-volume-off"></i></button>
-						<audio id="<?php echo $post->ID; ?>-audio">
-							<source src="<?php echo get_field('audio_track'); ?>" type="audio/ogg">
-							<source src="<?php echo get_field('audio_track_mp3'); ?>" type="audio/mpeg">
-								Your browser does not support the audio element.
-						</audio>
-
-						<a class="show-translation" href="#"><div class="translate show-english"></div></a>
-
-						<div class="image-wrapper">
-						<?php
-							if (get_the_post_thumbnail()) {
-								echo get_the_post_thumbnail($post->ID, 'medium');
-							} else {
-						?>
-						<div class="image-substitute"><?php echo get_field('english_translation'); ?></div>
-						<?php } ?>
-						</div>
-				</div>
-			<?php endwhile; ?>
-			<?php wp_reset_postdata(); ?>
-
-
-
-
 
 		</div>
 

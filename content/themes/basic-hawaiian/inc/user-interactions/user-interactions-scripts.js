@@ -10,6 +10,50 @@ jQuery(document).ready(function($) {
     return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
   }
 
+  function administer_test() {
+    // Set current test health
+    var lesson_health = $('.lesson-health').length;
+    // Hide next card, show check
+    $('#advance-lesson').hide();
+    // Allow for choice selection & correct immediately
+    $('.choice').on('click', function() {
+      // Correct answer
+      if ( $(this).hasClass('correct') ) {
+        // Increment O score
+        $(this).attr('data-O',1);
+        // Show message
+        $('.lesson-message.correct').show().removeClass('slideOutDown').addClass('slideInUp animated');
+      // Incorrect answer
+      } else {
+        var correct_answer_object = $(this).parents('ul').children('li').find('a.correct');
+        var correct_answer = $(this).parents('ul').children('li').find('a.correct').text();
+        // Increment X score on correct answer
+        correct_answer_object.attr('data-X',1);
+        // Show message
+        $('.lesson-message.wrong strong').html(correct_answer);
+        $('.lesson-message.wrong').show().removeClass('slideOutDown').addClass('slideInUp animated');
+        // Subtract
+        $('.lesson-health').first().addClass('fadeOut animated');
+        lesson_health = lesson_health - 1;
+      }
+      // Fail Lesson
+      if ( lesson_health === 0 ) {
+        setTimeout(function(){
+          $('#finish-lesson').attr('data-lesson-outcome', 'fail');
+          $('#finish-lesson').click();
+        },2000);
+      // Advance Lesson
+      } else {
+        var last_card = $('.card').last();
+        if ( last_card.hasClass('active') ) {
+          $('#finish-lesson').show();
+        } else {
+          $('#advance-lesson').show();
+        }
+      }
+    });
+  }
+
   /**
    * Global: Load First card in lesson
    */
@@ -30,6 +74,15 @@ jQuery(document).ready(function($) {
       $(audio_player_id)[0].pause(); // pause!
     }
   });
+  // Restart audio after end
+  $('audio').on('ended',function(){
+    $(this).prev().removeClass('on').addClass('off'); // Change class
+    $(this).prev().find('i').removeClass('fa-volume-up').addClass('fa-volume-off');
+    $(this)[0].currentTime = 0;
+    $(this)[0].pause();
+  });
+  // Play first active card
+  $('.card.active').find('.audio-toggle').click();
 
   /**
    * Global: Advance Lesson
@@ -51,16 +104,34 @@ jQuery(document).ready(function($) {
       current_counter.removeClass('active');
       next_counter.addClass('active');
 
-    // If a lesson message is visible, hide it.
-    $('.lesson-message').removeClass('slideInUp').addClass('slideOutDown animated');
+      // If a lesson message is visible, hide it.
+      $('.lesson-message').removeClass('slideInUp').addClass('slideOutDown animated');
 
-    // Then show pau!
-    } else {
+      // If a lesson has audio
+      $('.card.active').find('.audio-toggle').click();
+
+      // If lesson is a test lesson, administer test.
+      if ( $('.card.active').hasClass('test') ) {
+        administer_test();
+      }
+
+      // Advance lesson instructions if necessary
+      if ( $('.lesson-instructions').length > 1 ) {
+        var current_instruction = $('.lesson-instructions.active');
+        var next_instruction = current_instruction.next();
+        current_instruction.removeClass('active');
+        next_instruction.addClass('active');
+      }
+    }
+
+    // Show pau on last card
+    if ( last_card.hasClass('active') ) {
       $('#advance-lesson').hide();
       $('#finish-lesson').show();
     }
-
   });
+
+
 
   /**
    * Global: Finish Lesson
@@ -84,8 +155,6 @@ jQuery(document).ready(function($) {
       results[choice_id] = { 'O' : choice_O, 'X' : choice_X };
     });
     data['results'] = results;
-
-    console.log(data);
 
     $.post(user_interactions_scripts.ajaxurl, {
       dataType: "jsonp",
@@ -115,57 +184,10 @@ jQuery(document).ready(function($) {
   }); // #finish-lesson
 
   /**
-   * Test Lesson
+   * Test Lessons
    */
   if ( $('.card.active').hasClass('test') ) {
-
-    // Set current test health
-    var lesson_health = $('.lesson-health').length;
-
-    // Hide next card, show check
-    $('#advance-lesson').hide();
-    // $('#check-lesson').show();
-
-    // Allow for choice selection & correct immediately
-    $('.choice').on('click', function() {
-
-      // Correct answer
-      if ( $(this).hasClass('correct') ) {
-        // Increment O score
-        $(this).attr('data-O',1);
-        // Show message
-        $('.lesson-message.correct').show().removeClass('slideOutDown').addClass('slideInUp animated');
-      // Incorrect answer
-      } else {
-        var correct_answer_object = $(this).parents('ul').children('li').find('a.correct');
-        var correct_answer = $(this).parents('ul').children('li').find('a.correct').text();
-        // Increment X score on correct answer
-        correct_answer_object.attr('data-X',1);
-        // Show message
-        $('.lesson-message.wrong strong').html(correct_answer);
-        $('.lesson-message.wrong').show().removeClass('slideOutDown').addClass('slideInUp animated');
-        // Subtract
-        $('.lesson-health').first().addClass('fadeOut animated');
-        lesson_health = lesson_health - 1;
-      }
-
-      // Fail Lesson
-      if ( lesson_health === 0 ) {
-        setTimeout(function(){
-          $('#finish-lesson').attr('data-lesson-outcome', 'fail');
-          $('#finish-lesson').click();
-        },2000);
-      // Advance Lesson
-      } else {
-        var last_card = $('.card').last();
-        if ( last_card.hasClass('active') ) {
-          $('#finish-lesson').show();
-        } else {
-          $('#advance-lesson').show();
-        }
-      }
-
-    });
+    administer_test();
   }
 
   /**
@@ -188,6 +210,40 @@ jQuery(document).ready(function($) {
     // Show the first available toggled content
     $('button.toggle-content.available').first().click();
 
+  }
+
+  /**
+   * Instructional Lesson
+   */
+  if ( $('body').hasClass('single-instruction_lessons') ) {
+
+    // Show the first lesson-instruction
+    $('h2.lesson-instructions').first().addClass('active');
+
+    // Show Translations
+    $('a.show-translation').on('click',function() {
+      // Toggle class
+      $('.translate').toggleClass('show-english');
+      $('.translate').toggleClass('show-hawaiian');
+      // Hide content, show translation
+      $('a.show-translation').parents('.card').children('.instructional-slide-content').toggle();
+      $('a.show-translation').parents('.card').children('.instructional-slide-translation').toggle();
+    });
+  }
+
+  /**
+   * Vocabulary Lessons
+   */
+  if ( $('body').hasClass('single-vocabulary_lessons') ) {
+    // Show Translations
+    $('a.show-translation').on('click',function() {
+      // Toggle class
+      $('.translate').toggleClass('show-english');
+      $('.translate').toggleClass('show-hawaiian');
+      // Hide content, show translation
+      $('a.show-translation').parents('.card').children('.english').toggle();
+      $('a.show-translation').parents('.card').children('.hawaiian').toggle();
+    });
   }
 
 
