@@ -71,7 +71,7 @@
 			<nav id="site-navigation" class="site-header col-sm-3" role="banner">
 
 				<a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-new.png'?>" alt="Basic Hawaiian Logo" /></a>
-				<a class="user-link" href="<?php echo get_admin_url('','profile.php'); ?>">
+				<a class="user-link" href="<?php echo get_edit_user_link(); ?>">
 					<?php $author_id = get_current_user_id(); ?>
 					<div class="image-container"><?php echo get_avatar( $author_id ); ?></div>
 					<p><?php the_author_meta('nickname', $author_id); ?></p>

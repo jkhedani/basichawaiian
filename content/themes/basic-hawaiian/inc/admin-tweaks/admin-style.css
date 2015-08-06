@@ -57,3 +57,10 @@ body.login #wp-submit {
 	line-height: 1px;
 	width: 100%;
 }
+
+/* Profile: Non Admin */
+body.profile-php.not-admin .user-admin-color-wrap,
+body.profile-php.not-admin .user-admin-bar-front-wrap,
+body.profile-php.not-admin .update-nag {
+	display: none;
+}

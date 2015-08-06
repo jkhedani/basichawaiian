@@ -211,7 +211,7 @@ function redirect_instructors_upon_login( $redirect_to, $request, $user ) {
     return $redirect_to;
   }
 }
-add_filter( 'login_redirect', 'redirect_instructors_upon_login', 10, 3 );
+// add_filter( 'login_redirect', 'redirect_instructors_upon_login', 10, 3 );
 
 function low_level_user_redirect_admin() {
   if ( ! current_user_can('edit_posts') ) {
@@ -219,7 +219,7 @@ function low_level_user_redirect_admin() {
     exit;
   }
 }
-add_action( 'admin_init', 'low_level_user_redirect_admin' );
+// add_action( 'admin_init', 'low_level_user_redirect_admin' );
 
 /**
  *	New User Registration Email Change

@@ -1151,7 +1151,6 @@ function filter_links_rel_external( $content ) {
  	global $user;
  	if ( isset( $user->roles ) && is_array( $user->roles ) ) {
  		//check for admins
- 		error_log(print_r($user->roles,true));
  		if ( in_array( 'administrator', $user->roles ) ) {
  			// redirect them to the default place
  			// return $redirect_to;
