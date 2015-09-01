@@ -23,8 +23,13 @@
 	// without paying.
 	$user = wp_get_current_user();
 	if( !is_user_logged_in() && !is_page() ) {
-    wp_redirect( home_url() );
-    exit;
+		// Only redirect if users are trying to access non-post content
+		$bodyClasses = get_body_class();
+		if ( !in_array('single-post', $bodyClasses) ) {
+			wp_redirect( home_url() );
+			exit;
+		}
+	// Send non paid users to payment
 	} elseif ( is_user_logged_in() && in_array('nonpaid',$user->roles) && !is_page('payment') ) {
 		wp_redirect( home_url('/payment') );
     exit;

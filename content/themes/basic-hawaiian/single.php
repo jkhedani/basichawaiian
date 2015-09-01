@@ -37,6 +37,9 @@ get_header(); ?>
 				case 'song_lessons':
 					get_template_part( 'template-parts/single', 'lesson-song' );
 					break;
+				default:
+					get_template_part( 'template-parts/single', 'default' );
+					break;
 			}
 		?>
 
