@@ -1338,7 +1338,15 @@ body.logged-in.single-vocabulary_lessons {
     }
     .cards {
       .card.test {
-        margin-top: 53px;
+        // margin-top: 53px;
+        h3 {
+          float: left;
+          margin: 0 10px 0 0;
+        }
+        ul.choices {
+          clear: both;
+          .clearfix();
+        }
         .image-wrapper {
           height: 180px;
           overflow: hidden;
@@ -1354,14 +1362,13 @@ body.logged-in.single-vocabulary_lessons {
             }
           }
         }
+
         p.choice-title {
           text-align: center;
           padding: 20px;
         }
         .audio-toggle {
-          position: absolute;
-          left: 0;
-          top: 0;
+          float: left;
         }
       }
     }

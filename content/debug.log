@@ -25099,3 +25099,343 @@
 [31-Aug-2015 19:46:11 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
 [31-Aug-2015 19:46:11 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
 [31-Aug-2015 19:46:11 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:10:57 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:10:57 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:10:57 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:10:58 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:10:58 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:10:58 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:11:04 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:11:04 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:11:04 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:11:04 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:11:05 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:11:05 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:11:05 UTC] 
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-unit.php on line 104
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined variable: k in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined index:  in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Undefined offset: 3 in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:11:10 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-vocabulary.php on line 96
+[01-Sep-2015 02:12:21 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:12:21 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:12:21 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:12:21 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:13:03 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:13:03 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:13:03 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:13:03 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:13:16 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:13:16 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:13:16 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:13:16 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:13:32 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:13:33 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:13:33 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:13:33 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:13:55 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:13:55 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:13:55 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:13:55 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:14:36 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:14:36 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:14:36 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:14:36 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:15:07 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:15:07 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:15:07 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:15:07 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:15:30 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:15:31 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:15:31 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:15:31 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:16:06 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:16:06 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:16:06 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:16:06 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:16:26 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:16:26 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:16:26 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:16:26 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:16:37 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:16:37 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:16:37 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:16:37 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:17:03 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:17:03 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:17:03 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:17:03 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:18:22 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:18:22 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:18:22 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:18:22 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:18:31 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:18:31 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:18:31 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:18:31 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:19:08 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:19:08 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:19:08 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:19:08 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21
+[01-Sep-2015 02:19:27 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[01-Sep-2015 02:19:27 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[01-Sep-2015 02:19:27 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[01-Sep-2015 02:19:27 UTC] PHP Notice:  Undefined variable: post_type_icon in /var/www/content/themes/basic-hawaiian/template-parts/single-lesson-header.php on line 21

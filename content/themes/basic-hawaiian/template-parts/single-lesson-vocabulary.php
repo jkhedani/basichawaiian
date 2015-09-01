@@ -93,10 +93,8 @@ $vocabulary_terms = new WP_Query(array(
 						}
 						?>
 
-						<?php if ( ! get_the_post_thumbnail($choices[$k]->ID) ) : ?>
-						<h3 class="hawaiian"><?php echo get_the_title(); ?></h3>
-						<?php endif; ?>
 						<?php if ( get_field('audio_track', $correctChoice->ID) ) : ?>
+						<h3><?php echo $correctChoice->post_title; ?></h3>
 						<button class="audio-toggle off" data-audio-id="<?php echo $correctChoice->ID; ?>" ><i class="fa fa-volume-off"></i></button>
 						<audio id="<?php echo $correctChoice->ID; ?>-audio">
 							<source src="<?php echo get_field('audio_track', $correctChoice->ID); ?>" type="audio/ogg">
@@ -110,10 +108,8 @@ $vocabulary_terms = new WP_Query(array(
 								<li>
 									<a class="col-sm-4 choice <?php if ($correctIndex === $k) { echo 'correct'; } ?>" data-id="<?php echo $choices[$k]->ID; ?>" data-O="0" data-X="0" href="javascript:void(0);">
 										<div class="image-wrapper">
-											<?php if ( get_the_post_thumbnail($choices[$k]->ID) ) : ?>
-											<?php echo get_the_post_thumbnail($choices[$k]->ID); ?>
-											<?php endif; ?>
-										</div>
+												<?php echo get_the_post_thumbnail($choices[$k]->ID); ?>
+										</div>										
 										<p class="choice-title"><?php echo get_field('english_translation', $choices[$k]->ID); ?></p>
 									</a>
 								</li>
