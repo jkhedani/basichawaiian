@@ -196,7 +196,7 @@ get_header(); ?>
 							error_log($userPaymentType);
 							if ( $userPaymentType === 'one_unit' ) {
 								$userPaymentClass = 'disabled';
-							} elseif ( $userPaymentType === 'four_unit' ) {
+							} elseif ( $userPaymentType === 'four_unit' || $userPaymentType === 'three_unit' ) {
 								$userPaymentClass = '';
 							} else {
 								$userPaymentClass = 'disabled';

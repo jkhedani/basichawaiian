@@ -13,9 +13,12 @@ if ( get_field('stripe_is_live','option') === false ) {
 	$publishable = get_field('stripe_live_publishable','option');
 }
 
+$user = wp_get_current_user();
+
+
 ?>
 
-	<div id="primary-twin" class="content-area col-sm-6 col-sm-offset-3">
+	<div id="primary-twin" class="content-area col-sm-8 col-sm-offset-2">
 		<main id="main" class="site-main" role="main">
 
 			<a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri() . '/images/logo-new-large.png'?>" alt="Basic Hawaiian Logo" /></a>
@@ -27,22 +30,33 @@ if ( get_field('stripe_is_live','option') === false ) {
 
 				<!-- Payment plans -->
 				<ul class="pricing">
-					<li>
-						<h2 class="large">1 Unit/Kukui</h2>
-						<p>One semester worth of lessons and activities.</p>
-						<hr />
-						<?php echo cents_to_dollars( get_field('one_unit_cost','option') ); ?>
-						<a class="enroll btn btn-primary" data-cost="<?php echo get_field('one_unit_cost','option'); ?>" data-cost-type="one_unit" data-cost-blurb="One semester worth of lessons and activities.">Enroll</a>
-					</li>
-					<!--
-					<li>
-						<h2 class="large">4 Unit/Kukui</h2>
-						<p>Two years worth of lessons and activities.</p>
-						<hr />
-						<?php echo cents_to_dollars( get_field('four_unit_cost','option') ); ?>
-						<a class="enroll btn btn-primary" data-cost="<?php echo get_field('four_unit_cost','option'); ?>" data-cost-type="four_unit" data-cost-blurb="Two years worth of lessons and activities.">Enroll</a>
-					</li>
-					-->
+					<?php
+						// Allow upgrades for one unit users
+						if ( is_user_logged_in() && in_array('student',$user->roles) ) { ?>
+							<li class="three-more">
+								<h2 class="large">3 More Unit/Kukui</h2>
+								<p>One and a half years worth of lessons and activities.</p>
+								<hr />
+								<?php echo cents_to_dollars( get_field('upgrade_three_cost','option') ); ?>
+								<a class="enroll btn btn-primary" data-cost="<?php echo get_field('upgrade_three_cost','option'); ?>" data-cost-type="three_unit" data-cost-blurb="One and a half years worth of lessons and activities.">Enroll</a>
+							</li>
+
+					<?php } else { ?>
+						<li>
+							<h2 class="large">1 Unit/Kukui</h2>
+							<p>One semester worth of lessons and activities.</p>
+							<hr />
+							<?php echo cents_to_dollars( get_field('one_unit_cost','option') ); ?>
+							<a class="enroll btn btn-primary" data-cost="<?php echo get_field('one_unit_cost','option'); ?>" data-cost-type="one_unit" data-cost-blurb="One semester worth of lessons and activities.">Enroll</a>
+						</li>
+						<li>
+							<h2 class="large">4 Unit/Kukui</h2>
+							<p>Two years worth of lessons and activities.</p>
+							<hr />
+							<?php echo cents_to_dollars( get_field('four_unit_cost','option') ); ?>
+							<a class="enroll btn btn-primary" data-cost="<?php echo get_field('four_unit_cost','option'); ?>" data-cost-type="four_unit" data-cost-blurb="Two years worth of lessons and activities.">Enroll</a>
+						</li>
+					<?php } ?>
 				</ul>
 			</div>
 

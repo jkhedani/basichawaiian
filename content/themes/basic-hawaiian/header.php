@@ -88,7 +88,7 @@
 					<ul class="drawer nav-sidebar">
 						<!--<li><a class="edit-profile" href="<?php echo get_edit_user_link(); ?>"><i class="fa fa-edit"></i>Edit your profile</a></li>-->
 						<?php if ( current_user_can('edit_posts') ) // Reset only for those who can edit the site ?>
-						<li><a href="<?php echo esc_url( home_url( '/scoresheet' ) ); ?>" class="view-scoresheet">View Scoresheet <i class="fa fa-tasks"></i></a></li>
+						<!-- <li><a href="<?php echo esc_url( home_url( '/scoresheet' ) ); ?>" class="view-scoresheet">View Scoresheet <i class="fa fa-tasks"></i></a></li> -->
 						<li><a href="mailto:info@basichawaiian.com" class="get-support">Get Support <i class="fa fa-question-circle"></i></a></li>
 						<li><a href="#" class="reset-scores">Reset Score <i class="fa fa-times-circle-o"></i></a></li>
 						<li><a href="<?php echo wp_logout_url( home_url() ); ?>" title="Logout">Logout <i class="fa fa-sign-out"></i></a></li>

@@ -16,6 +16,8 @@ function pippin_stripe_process_payment() {
 			$cost = get_field('one_unit_cost','option');
 		} elseif ( $cost_type === "four_unit" ) {
 			$cost = get_field('four_unit_cost','option');
+		} elseif ( $cost_type === "three_unit" ) {
+			$cost = get_field('upgrade_three_cost','option');
 		}
 
 		// check if we are using test mode
@@ -25,11 +27,11 @@ function pippin_stripe_process_payment() {
 		// 	$secret_key = $stripe_options['live_secret_key'];
 		// }
 
-    if ( get_field('stripe_is_live','option') === false ) {
-  		$secret = get_field('stripe_test_secret','option');
-  	} elseif ( get_field('stripe_is_live','option') === true ) {
-  		$secret = get_field('stripe_live_secret','option');
-  	}
+	    if ( get_field('stripe_is_live','option') === false ) {
+	  		$secret = get_field('stripe_test_secret','option');
+	  	} elseif ( get_field('stripe_is_live','option') === true ) {
+	  		$secret = get_field('stripe_live_secret','option');
+	  	}
 
 		// attempt to charge the customer's card
 		try {
@@ -45,7 +47,7 @@ function pippin_stripe_process_payment() {
 				)
 			);
 
-      // If payment is successful, update user role from nonpaid to student
+		    // If payment is successful, update user role from nonpaid to student
 			$user->remove_role('nonpaid');
 			$user->add_role('student');
 
