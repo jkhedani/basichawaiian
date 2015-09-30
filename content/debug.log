@@ -25691,3 +25691,24 @@
 [14-Sep-2015 02:48:19 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
 [14-Sep-2015 02:48:26 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
 [14-Sep-2015 02:49:19 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:17:00 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[30-Sep-2015 05:17:04 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:17:04 UTC] PHP Notice:  Undefined variable: user in /var/www/content/themes/basic-hawaiian/functions.php on line 1187
+[30-Sep-2015 05:17:04 UTC] PHP Notice:  Trying to get property of non-object in /var/www/content/themes/basic-hawaiian/functions.php on line 1187
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:20:45 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[30-Sep-2015 05:21:58 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:21:58 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:21:58 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
+[30-Sep-2015 05:22:20 UTC] PHP Notice:  Undefined index: sml_subscribe in /var/www/content/plugins/mail-subscribe-list/sml.php on line 267
+[30-Sep-2015 05:22:20 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 78
+[30-Sep-2015 05:22:20 UTC] PHP Notice:  Undefined index: action in /var/www/content/themes/basic-hawaiian/inc/user-interactions/user-interactions-functions.php on line 79
